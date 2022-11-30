@@ -1,296 +1,716 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="https://neust.edu.ph/wp-content/uploads/2020/06/neust_logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="https://sherlocknt.github.io/NEUST/style.css"> -->
     <title>Nueva Ecija University of Science and Technology | ISO 9001:2015 CERTIFIED</title>
 </head>
-<style>
-    .dropbtn {
-        color: white;
-        font-weight: 500;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #144BAD;
-        min-width: 300px;
-        z-index: 1;
-        border-bottom-left-radius: .5em .5em;
-        border-bottom-right-radius: .5em .5em;
-    }
-
-    .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        font-family: 'Roboto Black', sans-serif;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-        background-color: #FFD875;
-        border-color: #FFD875;
-    }
-</style>
 
 <body>
-    <nav class="navbar" style="background-color: #144BAD;">
-        <div class="container-fluid">
-            <a class=" navbar-brand" href="#">
-                <div style="display: block; margin: 0; padding: 0;">
-                    <div style="display: inline-block; margin: 0; padding: 0; vertical-align: middle;">
-                        <img src="https://neust.edu.ph/wp-content/uploads/2020/06/neust_logo.png" alt="Logo"
-                            width="100px" height="100px" class="d-inline-block align-text-top">
-                    </div>
-                    <div
-                        style="font-family: 'Roboto Black', sans-serif; font-weight: bold;display: inline-block; vertical-align: middle; margin: 0; padding: 0;">
-                        <div style="border-bottom: 2px solid #f5f5f6; color: white; font-size: 11pt;">Republic of the
-                            Philippines</div>
-                        <div style=" color: #FFD875; font-size: 16pt;">NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY
-                        </div>
-                        <div style=" color: white; font-size: 11pt;">ISO 9001:2015 CERTIFIED</div>
-                    </div>
-                </div>
+    <aside class="sidebar">
+        <div class="toggle">
+            <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
             </a>
-
-            <div id="pst-container">
-                <div style="color: #FFD875;">Philippine Standard Time:</div>
-                <div id="time" style="color: white;"></div>
-            </div>
         </div>
-    </nav>
-    <nav class="navbar-expand-lg nav-tabs" style="background-color: #144BAD;">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page">Home</a>
+        <div class="side-inner">
+            <div class="profile">
+                <img src="https://neust.edu.ph/wp-content/uploads/2020/06/neust_logo.png" alt="Image" class="img-fluid">
+                <p>Republic of the Philippines</p>
+                <h3 class="name">NUEVA ECIJA NIVERSITY OF SCIENCE AND TECHNOLOGY</h3>
+                <span class="country">ISO 9001:2015 CERTIFIED</span>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="list-unstyled ps-0 mt">
+                    <li class="mb-1">
+                        <a href="#" class="home">
+                            Home
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">About <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Historical Background</a>
-                            <a href="#">Mandate and Function</a>
-                            <a href="#">Mission and Vision</a>
-                            <a href="#">NEUST March</a>
-                            <a href="#">NEUST Key Officials</a>
-                            <a href="#">Message from the President</a>
-                            <a href="#">Feedback and Redress Mechanism</a>
-                            <a href="#">NEUST Awards</a>
+
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#About-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> About
+                        </button>
+                        <div class="collapse" id="About-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-dark d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Historical
+                                        Background</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Mandate and
+                                        Function</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Mission and
+                                        Vision</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        March</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST Key
+                                        Officials</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Message
+                                        from the President</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Feedback
+                                        and Redress Mechanism</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Awards</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Admissions <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Frontline Services</a>
-                            <a href="#">Enrollment Procedure and Qualifications</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Admissions-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Admissions
+                        </button>
+                        <div class="collapse" id="Admissions-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Frontline
+                                        Services</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Enrollment
+                                        Procedure and Qualifications</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Colleges</button>
-                        <div class="dropdown-content">
-                            <a href="#">College of Agriculture</a>
-                            <a href="#">College of Architecture</a>
-                            <a href="#">College of Art and Science</a>
-                            <a href="#">College of Criminology</a>
-                            <a href="#">College of Education</a>
-                            <a href="#">College of Engineering</a>
-                            <a href="#">College of Industrial Technology</a>
-                            <a href="#">College of Information and Communication Technology</a>
-                            <a href="#">College of Management and Business Technology</a>
-                            <a href="#">College of Nursing</a>
-                            <a href="#">College of Public Administration and Disaster Management</a>
-                            <a href="#">Graduate School</a>
-                            <a href="#">Laboratory Highschool</a>
-                            <a href="#">San Isidro Campus</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Colleges-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Colleges
+                        </button>
+                        <div class="collapse" id="Colleges-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Agriculture</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Architecture</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Art and
+                                        Science</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Criminology</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Education</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Engineering</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Industrial Technology</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Information and Communication Technology</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Management and Business Technology</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Nursing</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">College of
+                                        Public
+                                        Administration and Disaster Management</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Graduate
+                                        School</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Laboratory
+                                        Highschool</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">San Isidro
+                                        Campus</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Programs Offered <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">General Tinio Street Campus</a>
-                            <a href="#">Sumacab Campus</a>
-                            <a href="#">San Isidro Campus</a>
-                            <a href="#">Gabaldon Campus</a>
-                            <a href="#">Atate Campus</a>
-                            <a href="#">Fort Magsaysay Campus</a>
-                            <a href="#">Off Campuses</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Programs-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Programs Offered
+                        </button>
+                        <div class="collapse" id="Programs-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">General
+                                        Tinio
+                                        Street Campus</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sumacab
+                                        Campus</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">San Isidro
+                                        Campus</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Gabaldon
+                                        Campus</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Atate
+                                        Campus</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Fort
+                                        Magsaysay
+                                        Campus</a></li>
+                                <li><button
+                                        class="btn btn-toggles d-inline-flex align-items-center border-0 collapsed expand"
+                                        data-bs-toggle="collapse" data-bs-target="#Off-collapse" aria-expanded="false">
+                                        <i class="bi bi-chevron-down"></i> Off Campuses
+                                    </button>
+                                    <div class="collapse" id="Off-collapse">
+                                        <ul class="btn-toggle-navs list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Talavera</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">General
+                                                    Tinio Papaya</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">San
+                                                    Leonardo</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">San
+                                                    Antonio</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Peñaranda</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Carranglan</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="https://library.neust.edu.ph" class="dropbtn nav-link">NEUST Library</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">RET <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Research</a>
-                            <a href="#">Extension</a>
-                            <a href="#">Training</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Library-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> NEUST Library
+                        </button>
+                        <div class="collapse" id="Library-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Library</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Career <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Notice of Vacant Position</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#RET-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> RET
+                        </button>
+                        <div class="collapse" id="RET-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-dark d-inline-flex text-decoration-none rounded">Research</a>
+                                </li>
+                                <li>
+                                    <button
+                                        class="btn btn-toggles d-inline-flex align-items-center rounded border-0 collapsed expand"
+                                        data-bs-toggle="collapse" data-bs-target="#Extension-collapse"
+                                        aria-expanded="false">
+                                        <i class="bi bi-chevron-down"></i> Extension
+                                    </button>
+                                    <div class="collapse" id="Extension-collapse">
+                                        <ul class="btn-toggle-navs list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Organizational
+                                                    Chart</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Quality
+                                                    Objectives</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Quality
+                                                    Policy</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Staff
+                                                    and Units Head</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">List of
+                                                    Courses</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">List of
+                                                    Trainings 2017</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Research
+                                                    Gallery</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button
+                                        class="btn btn-toggles d-inline-flex align-items-center rounded border-0 collapsed expand"
+                                        data-bs-toggle="collapse" data-bs-target="#Training-collapse"
+                                        aria-expanded="false">
+                                        <i class="bi bi-chevron-down"></i> Training
+                                    </button>
+                                    <div class="collapse" id="Training-collapse">
+                                        <ul class="btn-toggle-navs list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Organizational
+                                                    Chart</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Quality
+                                                    Objectives</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Quality
+                                                    Policy</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Staff
+                                                    and Units Head</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">List of
+                                                    Courses</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">List of
+                                                    Trainings 2017</a></li>
+                                            <li><a href="#"
+                                                    class="link-dark d-inline-flex text-decoration-none rounded">Research
+                                                    Gallery</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Downloads <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Admission Form for Grade 7</a>
-                            <a href="#">Microsoft Office 365 and MS Teams Free Subscription</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Career-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Career
+                        </button>
+                        <div class="collapse" id="Career-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Notice of
+                                        Vacant Position</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">i-NEUST <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">NEUST Online Journals</a>
-                            <a href="#">NEUST Client Satisfaction Form</a>
-                            <a href="#">NEUST Health Survey Online Form</a>
-                            <a href="#">Portal Online Application Form</a>
-                            <a href="#">NEUST E-mail Online Application Form</a>
-                            <a href="#">COVID-19 Declaration Form</a>
-                            <a href="#">NEUST Armis</a>
-                            <a href="#">i-Library</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Downloads-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Downloads
+                        </button>
+                        <div class="collapse" id="Downloads-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Admission
+                                        Form for
+                                        Grade 7</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Microsoft
+                                        Office
+                                        365 and MS Teams Free Subscription</a></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">Bidding <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Yr. 2017</a>
-                            <a href="#">Yr. 2018</a>
-                            <a href="#">Yr. 2019</a>
-                            <a href="#">Yr. 2020</a>
-                            <a href="#">Yr. 2021</a>
-                            <a href="#">Yr. 2022</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#i-NEUST-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> i-NEUST
+                        </button>
+                        <div class="collapse" id="i-NEUST-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Online
+                                        Journals</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Client
+                                        Satisfaction Form</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Health Survey
+                                        Online Form</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Portal
+                                        Online
+                                        Application Form</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        E-mail Online
+                                        Application Form</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">COVID-19
+                                        Declaration Form</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">NEUST
+                                        Armis</a></li>
+                                <li><a href="#"
+                                        class="link-dark d-inline-flex text-decoration-none rounded">i-Library</a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <button class="dropbtn nav-link">FAQs <i class="bi bi-chevron-down"></i></button>
-                        <div class="dropdown-content">
-                            <a href="#">Student Portal FAQs</a>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#Bidding-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> Bidding
+                        </button>
+                        <div class="collapse" id="Bidding-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2017</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2018</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2019</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2020</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2021</a></li>
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Yr.
+                                        2022</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#FAQs-collapse" aria-expanded="false">
+                            <i class="bi bi-chevron-down"></i> FAQs
+                        </button>
+                        <div class="collapse" id="FAQs-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Student
+                                        Portal
+                                        FAQs</a></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="container">
-
-        <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="8000">
-                    <img class="d-block w-100"
-                        src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/09/300176073_1423781014812132_6075915651655266224_n.png?w=1280&ssl=1"
-                        alt="">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/06/BEST-IN-THE-WORLD.png?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/05/GAWAD-PARANGAL.png?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/DISCLAIMER.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/IMPACT-RANKING.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/GTC-2.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/GTC.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SUMACAB-1.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SUMACAB-2-1.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="8000">
-                    <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SIC.jpg?w=1280&ssl=1"
-                        class="d-block w-100" alt="...">
+    </aside>
+    <main>
+        <div class="site-section">
+            <div class="container">
+                <div class="row justify-content-center">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+    </main>
+
+    <div class="container">
+        <img src="neust_bg.png" alt="" class="img">
+        <img src="https://neust.edu.ph/wp-content/uploads/2020/06/neust_logo.png" alt="Image" class="logo"
+            style="height: 100px;">
+        <div class="rep"> Republic of the Philippines</div>
+        <h3 class="neust">NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h3>
+        <p class="iso">ISO 9001:2015 CERTIFIED</p>
+        <p class="tag"><em>"Transforming Communities Through Science and Technology"</em></p>
 
     </div>
-    <script>function display_ct7() {
-            var x = new Date()
-            var ampm = x.getHours() >= 12 ? ' PM' : ' AM';
-            hours = x.getHours() % 12;
-            hours = hours ? hours : 12;
-            hours = hours.toString().length == 1 ? 0 + hours.toString() : hours;
+    <div class="second" style="margin-top: 6%;">
+        <div class="row">
+            <div class="col-10 ">
+                <div class="container text-center" style="margin-top: 0%;">
+                    <div class="row row-cols-4">
+                        <div class="col"><a href="http://admission.neust.edu.ph" type="button" target="_blank"
+                                class="btn btn-lg w-100"><i class="bi bi-hand-index-thumb"></i> Online Admission</a>
+                        </div>
+                        <div class="col"><a href="http://enroll.neust.edu.ph/" type="button" target="_blank"
+                                class="btn btn-primary btn-lg w-100"><i class="bi bi-laptop"></i> Online Enrollment</a>
+                        </div>
+                        <div class="col"><a href="http://lms.neust.edu.ph/" type="button" target="_blank"
+                                class="btn btn-primary btn-lg w-100"><i class="bi bi-book"></i> NEUST LMS</a></div>
+                        <div class="col"><a href="http://58.69.74.135:1908/sisneust/login" target="_blank" type="button"
+                                class="btn btn-primary btn-lg w-100"><i class="bi bi-people"></i> NEUST Portal</a></div>
+                    </div>
+                </div>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
+                    style="margin-top: 4%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="8000">
+                            <img class="d-block w-100"
+                                src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/09/300176073_1423781014812132_6075915651655266224_n.png?w=1280&ssl=1"
+                                alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/06/BEST-IN-THE-WORLD.png?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/05/GAWAD-PARANGAL.png?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/DISCLAIMER.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/IMPACT-RANKING.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/GTC-2.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/GTC.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SUMACAB-1.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SUMACAB-2-1.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="8000">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2022/04/SIC.jpg?w=1280&ssl=1"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="row" style="margin-top: 12%; margin-left: 5%; margin-right: auto;">
+                    <div class="col">
+                        <div class="card h-100" style="width: 16rem;background-color:#FFD875;">
+                            <img style="border-radius: .5em;"
+                                src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2020/06/suc_president.jpg?fit=200%2C300&ssl=1"
+                                class="card-img-top" alt="UNIVERSITY PRESIDENT">
+                            <div class="card-body" style="background-color:#144BAD;">
+                                <p class="card-text" style=" color:#FFD875; font-weight: 600">UNIVERSITY PRESIDENT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 16rem;background-color:#FFD875;">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2020/06/vpabf.jpg?fit=200%2C300&ssl=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color:#144BAD;">
+                                <p class="card-text" style=" color:#FFD875; font-weight: 600">VICE PRESIDENT FOR
+                                    ADMINISTRATION BUSINESS AND FINANCE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 16rem;background-color:#FFD875;">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2020/06/vpaa.jpg?fit=200%2C300&ssl=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color:#144BAD;">
+                                <p class="card-text" style=" color:#FFD875; font-weight: 600">VICE PRESIDENT FOR
+                                    ACADEMIC AFFAIRS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="width: 16rem;background-color:#FFD875;">
+                            <img src="https://i0.wp.com/neust.edu.ph/wp-content/uploads/2020/06/vpret.jpg?fit=200%2C300&ssl=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color:#144BAD;">
+                                <p class="card-text" style=" color:#FFD875; font-weight: 600">VICE PRESIDENT FOR
+                                    RESEARCH, EXTENSION AND TRAINING</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 4%;">
+                    <div class="col">
+                        <img src="https://neust.edu.ph/wp-content/uploads/college_logos/AGRI.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/ARKI.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/CAS.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/COC.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/COED.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/COENG.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/CIT.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/CICT.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/CMBT.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/NURSING.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/CPADM.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/GS.png" height="90px">
+                    </div>
+                    <div class="col">
+                        <img src="https://neust.edu.ph//wp-content/uploads/college_logos/LHS.png" height="90px">
+                    </div>
+                </div>
+            </div>
 
-            var minutes = x.getMinutes().toString()
-            minutes = minutes.length == 1 ? 0 + minutes : minutes;
+            <div class="col-2">
+                <div class="list-group" style="margin-left: 5%;">
+                    <div class="d-flex w-100 list-group-item list-group-item-action justify-content-center"
+                        style="background-color: #144BAD">
+                        <h5 class="mb-1" style="color: #FFD875">RECENT POSTS</h5>
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">ISO SURVEILLANCE AUDIT 2022 Day
+                                2</p>
+                        </div>
+                        <small class="text-muted">November 24, 2022</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">ISO SURVEILLANCE AUDIT 2022 Day
+                                1</p>
+                        </div>
+                        <small class="text-muted">November 23, 2022</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">DAY 5. KEEPING THE GLORY OF THE
+                                NUEVA
+                                ECIJA
+                                UNIVERSITY OF SCIENCE AND TECHNOLOGY (INSTITUTIONAL ACCREDITATION CLOSING PROGRAM)
+                            </p>
+                        </div>
+                        <small class="text-muted">September 23, 2022</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">DAY 4. MOVING TO GREATER
+                                HEIGHTS,
+                                WORKING
+                                WITH PASSION AND COMMITMENT TOWARDS SUCCESS</p>
+                        </div>
+                        <small class="text-muted">September 22, 2022</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">DAY 3: CONNECTING INNOVATIONS
+                                IN
+                                RESEARCH
+                                AND EXTENSIONS OF NEUST</p>
+                        </div>
+                        <small class="text-muted">September 21, 2022</small>
+                    </a>
+                </div>
 
-            var seconds = x.getSeconds().toString()
-            seconds = seconds.length == 1 ? 0 + seconds : seconds;
+                <div class="list-group mt-4" style="margin-left: 5%;">
+                    <div class="d-flex w-100 list-group-item list-group-item-action justify-content-center"
+                        style="background-color: #144BAD">
+                        <h5 class="mb-1" style="color: #FFD875;">CATEGORIES</h5>
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">Announcements</p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">News</p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">The Blaze: Student Publication</p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">Uncategorized</p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <p class="mb-1" style="color: #144BAD; font-weight:400;">Webinar</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-group mt-4" style="margin-left: 5%;">
+                    <div class="d-flex w-100 list-group-item list-group-item-action justify-content-center"
+                        style="background-color: #144BAD">
+                        <h5 class="mb-1" style="color: #FFD875;">FEATURED VIDEO</h5>
+                    </div>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-center">
+                            <iframe id="video-1701-1_youtube_iframe" frameborder="0" allowfullscreen="1"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                title="NEUST Full Video AVP"
+                                src="https://www.youtube.com/embed/gmKxxysTW3M?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fneust.edu.ph&amp;widgetid=2"
+                                width="252.5" height="142.03125"></iframe>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-center">
+                            <iframe id="video-1701-2_youtube_iframe" frameborder="0" allowfullscreen="1"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                title="NEUST March"
+                                src="https://www.youtube.com/embed/2Gqa9HQgi9I?controls=0&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=0&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;end=0&amp;loop=0&amp;playsinline=0&amp;start=0&amp;nocookie=false&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fneust.edu.ph&amp;widgetid=1"
+                                width="252.5" height="142.03125"></iframe>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-            var month = (x.getMonth() + 1).toString();
-            month = month.length == 1 ? 0 + month : month;
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-5 border-top"
+        style="background-color:#144BAD ;">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0" style="color:#FFD875;">NUEVA ECIJA UNIVERSITY OF SCIENCE AND
+                TECHNOLOGY</span>
+        </div>
+        <div
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="https://neust.edu.ph/wp-content/uploads/2020/06/neust_logo.png" alt="Image" style="height: 80px;">
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="https://neust.edu.ph/neust-fb-page/"><i class="bi bi-facebook"></i> NEUST Official
+                    FB Page</a></li>
+            <li class="ms-3"><a href="https://webmail.neust.edu.ph/"><i class="bi bi-envelope-fill"></i> NEUST Mail</a>
+            </li>
+            <li class="ms-3"><a href="http://119.93.173.77/virtualtour/sumacab/"><i class="bi bi-badge-vr-fill"></i>
+                    NEUST VR Tour</a></li>
+        </ul>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-short"></i></button>
 
-            var dt = x.getDate().toString();
-            dt = dt.length == 1 ? 0 + dt : dt;
 
-            var x1 = month + "/" + dt + "/" + x.getFullYear();
-            x1 = x1 + " - " + hours + ":" + minutes + ":" + seconds + " " + ampm;
-            document.getElementById('time').innerHTML = x1;
-            display_c7();
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-        function display_c7() {
-            var refresh = 1000; // Refresh rate in milli seconds
-            mytime = setTimeout('display_ct7()', refresh)
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-        display_c7()
     </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
