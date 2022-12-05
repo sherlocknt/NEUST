@@ -562,3 +562,9 @@ main .post-content .post-meta {
   background-color: #123f8b !important;
   color: #FFD875 !important;
 }
+
+@media screen and (max-height: 950px) {
+  .img-card {
+      margin-top: 10% !important;
+  }
+}
